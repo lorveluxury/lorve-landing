@@ -3,57 +3,109 @@
 <head>
   <title>Lorvé Luxury</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Archivo:wght@300;400;500&display=swap" rel="stylesheet">
+
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0f0f0f;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Archivo', sans-serif;
       color: white;
-      text-align: center;
     }
+
     .hero {
-      padding: 100px 20px;
+      height: 100vh;
+      background: 
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
+        url('https://images.unsplash.com/photo-1617814076668-8df5edc8db05') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 40px 60px;
     }
-    h1 {
-      font-size: 42px;
-      margin-bottom: 20px;
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Archivo', sans-serif;
     }
-    p {
-      font-size: 18px;
-      max-width: 600px;
-      margin: 0 auto 30px;
-      color: #cccccc;
+
+    .nav-links {
+      display: flex;
+      gap: 40px;
+      font-size: 15px;
+      opacity: 0.9;
     }
-    .btn {
-      padding: 15px 30px;
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .cta-top {
+      background: #c89b5d;
+      color: black;
+      padding: 10px 22px;
+      border-radius: 25px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .left h1 {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 68px;
+      font-weight: 600;
+      line-height: 1.1;
+      max-width: 650px;
+      letter-spacing: -1px;
+    }
+
+    .right {
+      max-width: 420px;
+      font-size: 17px;
+      line-height: 1.6;
+      font-family: 'Archivo', sans-serif;
+      opacity: 0.9;
+    }
+
+    .btn-main {
+      margin-top: 25px;
+      display: inline-block;
       background: white;
       color: black;
+      padding: 15px 30px;
+      border-radius: 30px;
       text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
+      font-weight: 500;
+      font-family: 'Archivo', sans-serif;
     }
-    .fleet {
-      padding: 60px 20px;
-    }
-    img {
-      width: 90%;
-      max-width: 800px;
-      border-radius: 12px;
+
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .left h1 {
+        font-size: 42px;
+      }
+
+      .hero {
+        padding: 30px;
+      }
     }
   </style>
 </head>
-<body>
-
-  <section class="hero">
-    <h1>Executive Mobility, Refined.</h1>
-    <p>Private fleet service for executives who value discretion, punctuality, and comfort.</p>
-    <a class="btn" href="https://wa.me/62XXXXXXXXXX">Reserve Your Fleet</a>
-  </section>
-
-  <section class="fleet">
-    <h2>Our Fleet</h2>
-    <img src="https://via.placeholder.com/800x450" alt="Fleet Image">
-  </section>
-
-</body>
-</html>
